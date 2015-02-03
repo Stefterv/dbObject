@@ -5,12 +5,12 @@
 - Place the "dbObject.php" in your php website
 - Add a config.php with the following code
 
-	<?
-	define("DB_LOC", "localhost");
-	define("DB_USER", "root");
-	define("DB_PASS", "root");
-	define("DB_NAME", "dbObject_example");
-	?>
+		<?
+		define("DB_LOC", "localhost");
+		define("DB_USER", "root");
+		define("DB_PASS", "root");
+		define("DB_NAME", "dbObject_example");
+		?>
 
 - Change the login and the database name and you should be ready to go.
 
