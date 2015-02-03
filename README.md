@@ -1,7 +1,7 @@
 # dbObject
 
-### Usage
-#### Getting started
+## Usage
+### Getting started
 - Place the "dbObject.php" in your php website
 - Add a config.php with the following code
 	<?
@@ -31,7 +31,7 @@ The id variable is automatically added.
 	}
 	?>
 
-## Getting stuff out of the database
+## Getting rows out of the database
 
 #### Get stuff out of the database by query
 	Object::find($query);
@@ -40,7 +40,7 @@ The id variable is automatically added.
 #### Get all rows out of the database
 	Object::findAll($query);
 
-## Putting stuff in the database
+## Putting data in the database
 You can put an array into a object with:
 	Object->update(array);
 
@@ -71,6 +71,6 @@ then submit it to the database with:
 	$object->submit();
 
 
-## Removing stuff out of the database
+## Removing rows from the database
 remove stuff from the database is as simple as 
 	$object->delete();
