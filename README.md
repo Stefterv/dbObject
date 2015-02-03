@@ -79,4 +79,4 @@ remove stuff from the database is as simple as
 	$object->delete();
 
 ## Use cases
-- You can send a $_POST array into an object and update it with that in the database
+- You can send a $_POST array into an object and update it
