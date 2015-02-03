@@ -1,5 +1,5 @@
 # dbObject
-
+dbObject is a single file php library that will allow you to easily communicate with the database and send new data to the database
 ## Usage
 ### Getting started
 - Place the "dbObject.php" in your php website
@@ -74,5 +74,9 @@ then submit it to the database with:
 
 
 ## Removing rows from the database
-remove stuff from the database is as simple as 
+remove stuff from the database is as simple as
+
 	$object->delete();
+
+## Use cases
+- You can send a $_POST array into an object and update it with that in the database
