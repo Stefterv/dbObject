@@ -58,12 +58,19 @@ To send the current state of the object to the database use
 	$object->update($array);
 	$object->submit();
 
+#### Creating new stuff in the database
+Creating a new row is as easy as creating a new object:
+	$object = new Object();
+then submit it to the database with:
+	$object->submit();
+
+#### Example
+	$array = array("input"=>"test","test"=>"1");
+	$object = new Object();
+	$object->update($array);
+	$object->submit();
+
+
 ## Removing stuff out of the database
 remove stuff from the database is as simple as 
 	$object->delete();
-
-
-###### TO DO:
-- auto redirect after form submission
-- Documentation
-- PDO implementation
