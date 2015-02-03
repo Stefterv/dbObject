@@ -12,7 +12,7 @@
 	?>
 - Change the login and the database name and you should be ready to go.
 
-#### Example class:
+#### Class requirements:
 	<?
 	class Object extends databaseObject{
 		// add the table name of the database
@@ -21,10 +21,46 @@
 		public $variables;	
 	}
 	?>
+The id variable is automatically added.
+#### Example:
+	<?
+	class Example extends databaseObject{
+		protected static $dbName = "Example";
+		public $input;	
+		public $test;
+	}
+	?>
+
+## Getting stuff out of the database
+
 #### Get stuff out of the database by query
 	Object::find($query);
 #### Get a single object out of the database
 	Object::findSingle($query);
+#### Get all rows out of the database
+	Object::findAll($query);
+
+## Putting stuff in the database
+You can put an array into a object with:
+	Object->update(array);
+
+#### Example
+	$array = array("input"=>"test","test"=>"1");
+	$object = Object::findByID(1);
+	$object->update($array);
+
+Now the object's are updated but, it is not yet submitted to the database.
+To send the current state of the object to the database use 
+	$object->submit();
+#### Example
+	$array = array("input"=>"test","test"=>"1");
+	$object = Object::findByID(1);
+	$object->update($array);
+	$object->submit();
+
+## Removing stuff out of the database
+remove stuff from the database is as simple as 
+	$object->delete();
 
 
 ###### TO DO:
