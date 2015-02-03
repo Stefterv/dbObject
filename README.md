@@ -40,7 +40,7 @@ The id variable is automatically added.
 #### Get a single object out of the database
 	Object::findSingle($query);
 #### Get all rows out of the database
-	Object::findAll($query);
+	Object::findAll();
 
 ## Putting data in the database
 You can put an array into a object with:
